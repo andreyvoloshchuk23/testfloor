@@ -1,0 +1,39 @@
++font(comfortaa, comfortaa)
++font(OpenSans-Regular, OpenSans-Regular)	
++font(OpenSans-ExtraBold, OpenSans-ExtraBold)	
+
+.active
+	span:nth-child(1)
+		transform: rotate(-45deg)
+		top: 8px
+	span:nth-child(2)
+		transform: rotate(45deg)
+	span:nth-child(3)
+		transform: rotate(180deg)
+		opacity: 0
+.show
+	opacity: 1 !important
+	visibility: visible	!important
+.warning
+	position: absolute
+	bottom: -45px
+	left: 35%		
+	color: #f37832
+	opacity: 0
+	visibility: hidden
+	transition: .2s ease-in all
+.warning_other
+	left: 24%	
+.icon-danger-sign
+	display: block
+	margin: 0 auto
+	fill: #f37832	
+.icon-arrow
+	fill: #f37832
+@keyframes pulse
+	0% 
+		box-shadow: 0 0 0 0 rgba(243, 121, 51, 0.4)
+	70% 
+		box-shadow: 0 0 0 20px rgba(243, 121, 51, 0)
+	100% 
+		box-shadow: 0 0 0 0 rgba(243, 121, 51, 0)

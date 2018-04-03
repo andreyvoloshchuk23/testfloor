@@ -1,0 +1,110 @@
+<section class="price">
+	<div class="nav">
+		<ul class="nav__list">
+			<li class="nav__item">
+				<a href="" class="nav__link">Ссылка</a>
+			</li>
+			<li class="nav__item">
+				<a href="" class="nav__link">Ссылка</a>
+			</li>
+			<li class="nav__item">
+				<a href="" class="nav__link">Ссылка</a>
+			</li>
+			<li class="nav__item">
+				<a href="" class="nav__link">Ссылка</a>
+			</li>
+			<li class="nav__item">
+				<a href="" class="nav__link">Ссылка</a>
+			</li>
+		</ul>
+	</div>
+	<div class="header">
+		<div class="wrap">
+			<button class="menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</div>
+	<div class="content">
+		<h3 class="content__caption">розрахуйте вартість</h3>
+		<div class="container">	
+			<div class="content__item content__item_our">
+				<p class="content__text">наші ліки</p>
+				<input type="text" class="content__price content__price_our" placeholder='Введіть вартість упаковки'>
+				<span class='warning warning_our'>Неможливе значення {{mixins.icon('danger-sign')}}</span>
+			</div>
+		</div>
+		<div class="container">
+			<div class="content__item content__item_other">
+				<p class="content__text content__text_big">оберіть компанію</p>
+				<div class="competitor">
+					<ul class="competitor__list">
+						<li class="competitor__item"><span>{{mixins.icon('arrow')}}</span> конкурент 1</li>
+						<li class="competitor__item"><span>{{mixins.icon('arrow')}}</span> конкурент 2</li>
+						<li class="competitor__item"><span>{{mixins.icon('arrow')}}</span> конкурент 3</li>
+						<li class="competitor__item"><span>{{mixins.icon('arrow')}}</span> конкурент 4</li>
+						<li class="competitor__item"><span>{{mixins.icon('arrow')}}</span> конкурент 5</li>
+					</ul>
+				</div>
+				<button class="content__btn"><span>{{mixins.icon('arrow')}}</span></button>
+				<input type="text" class="content__price content__price_other" placeholder='Введіть вартість упаковки'> 
+				<span class='warning warning_other'>Неможливе значення {{mixins.icon('danger-sign')}}</span>
+			</div>
+		</div>
+		<div class="calculate">
+			<button class="calculate__btn" disabled>розрахувати курс</button>
+			<div class="calculate__keys">
+				<button class="calculate__item" disabled>1</button>
+				<button class="calculate__item" disabled>2</button>
+				<button class="calculate__item" disabled>3</button>
+				<button class="calculate__item" disabled>4</button>
+				<button class="calculate__item" disabled>5</button>
+				<button class="calculate__item" disabled>6</button>
+				<button class="calculate__item" disabled>7</button>
+				<button class="calculate__item" disabled>8</button>
+				<button class="calculate__item" disabled>9</button>
+				<button class="calculate__item" disabled>0</button>
+				<button class="calculate__item" disabled>,</button>
+				<button class="calculate__item calculate__item_cancel" disabled>X</button>
+			</div>
+		</div>	
+	</div>
+	<div class="modal">
+		<div class="modal__part modal__part_our">
+			<p class="product__number"><b>№30</b></p>
+			<p class="product__formula">Курс лікування 3 місяці по <b>1 таблетці</b> 3 рази на добу</p>
+			<span class="product__price product__price_our"></span>
+			<div class="product__view">
+				<div class="product__img product__img_our"><span class="product__quantity product__quantity_our"></span></div>
+				<span class="amount amount_our">x9 шт.</span>
+			</div>
+		</div>
+		<div class="modal__part modal__part_other">
+			<p class="product__number"><b>№30</b></p>
+			<p class="product__formula">Курс лікування 3 місяці по <b>2 таблетки</b> 3 рази на добу</p>
+			<span class="product__price product__price_other"></span>
+			<div class="product__view">
+				<div class="product__img product__img_other"><span class="product__quantity product__quantity_other"></span></div>
+				
+				<span class="amount amount_other">x18 шт.</span>
+			</div>
+		</div>
+		<button class="modal__cancel"><span>X</span></button>
+		<div class="modal__compression">
+			<img src="../img/rectangle.png" alt="" class="icon-rectangle">
+			<p class="compression__text">Ціна курсу</p>
+			<img src="../img/rectangle.png" alt="" class="icon-rectangle icon-rectangle_reverse">
+		</div>
+		<div class="modal__footer">
+			<p class="modal__economy"><span>1881 грн</span></p>
+			
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap wrap_more">
+			<div class="menu"><img src="../img/1.png" alt=""></div>
+		</div>
+	</div>
+</section>
